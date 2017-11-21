@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Scraping With Mongoose</title>
+    <style>
+      body {
+        background-color: #f0f0f0
+      }
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+      }
+      #comments {
+        float: right;
+        width: 30%;
+      }
+      #save-comment::hover {
+        pointer;
+      }
+      h1 {
+        color: purple;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: creme;
+        font-size: 18px;
+      }
+      input {
+        height: 36px;
+      }
+      textarea {
+        height: 200px;
+      }
+    </style>
+    <!-- Latest compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <!-- Latest compiled and minified JavaScript -->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Echojs Article Scraper</h1>
+      <h2>Want to leave a comment about an article?<br />Click on the title or link below!</h2>
+      <div id="articles"></div>
+      <div id="comment-saved"></div>
+      <div id="comments"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
