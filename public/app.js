@@ -26,7 +26,7 @@ $(document).on("click", "p", function() {
       console.log(data);
       // article's title
       $("#comments").append(
-        "<h1>Article you selected:</h1><h2>" + data.title + "</h2>");
+        "<h1>Article you selected:</h1><h2><i class='fa fa-hand-o-right'></i> " + data.title + "</h2>");
       // comment's title
       $("#comments").append("<input id='title-input' name='title' placeholder='My title'>");
       // comment's body
@@ -62,10 +62,10 @@ $(document).on("click", "#save-comment", function() {
       // ? data is the response?
       console.log(data);
       $("#comments").empty();
+      // ? not implemented, yet
       $('#comment-saved').append('<h2>Your comment has been saved!</h2>');
     });
   // Also, remove the values entered in the input and textarea 
-  // for comment entry
   $("#title-input").val("");
   $("#body-input").val("");
 });
