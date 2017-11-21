@@ -15,8 +15,6 @@ $(document).on("click", "p", function() {
   // recall: objectId or ObjectId in one of the models files, i think
   var thisId = $(this).attr("data-id");
   // make an ajax call for the Article
-  // ? i wonder if there is a parallel between /articles here and /articles
-  // in server.js
   $.ajax({
     method: "GET",
     url: "/articles/" + thisId
