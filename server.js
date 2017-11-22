@@ -30,7 +30,8 @@ mongoose.Promise = Promise;
 /*mongoose.connect('https://mlab.com/databases/articlespluscomments', {
   useMongoClient:true
 });*/
-mongoose.connect('mongodb://localhost/articlesandcomments', {
+var MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/articlesandcomments';
+mongoose.connect(MONGODB_URI, {
   useMongoClient:true
 });
 // scrape the echojs website

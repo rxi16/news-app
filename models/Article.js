@@ -14,9 +14,7 @@ var ArticleSchema = new Schema({
     type: String,
     required: true
   },
-  // `comment` is an object that stores a Comment id
-  // where is the Comment id produced??
-  // camel case
+  // `comment` is a field that stores a Comment id
   // populate the Article with an associated Comment
   // ref property links the ObjectId to the Comment model
   // "Comment" or "comment" passed to a function somewhere
