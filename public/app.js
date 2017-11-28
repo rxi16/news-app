@@ -2,7 +2,7 @@
 $.getJSON("/articles", function(data) {
   // For each one
   for (var i = 0; i < data.length; i++) {
-    // Display the apropos information on the page
+    // Display 
     $("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "</p>");
   }
 });
@@ -10,9 +10,7 @@ $.getJSON("/articles", function(data) {
 $(document).on("click", "p", function() {
   // Empty the comments from the comment section
   $("#comments").empty();
-  // how do we know a p tag exists?
   // Save the id from the p tag
-  // recall: objectId or ObjectId in one of the models files, i think
   var thisId = $(this).attr("data-id");
   // make an ajax call for the Article
   $.ajax({
